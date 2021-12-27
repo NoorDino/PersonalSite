@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<title>Noordeen's Page</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<head>
+    <title>Welcome!</title>
+
+
+    <style type="text/css">
+        #parallax {
+            background-color: black;
+            height: 100vh;
+            width: 100vw;
+            float: left;
+        }
+
+        #wrapper {
+            float: left;
+            width: 9000px;
+        }
+
+
+
+        #similar {
+            width: 900px;
+            background: rgb(5, 4, 4);
+            padding-left: 20px;
+        }
+
+        .image1 {
+            position: absolute;
+            top: -100px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /*overflow: hidden;*/
+            z-index: 3;
+        }
+
+        .thumbnail {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            z-index: 4;
+        }
+
+        p {
+            color: lightcoral;
+            font-size: 35px;
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+
+
+</head>
+
+
+<body style="margin:0; background-color: rgb(10, 4, 4);">
+
+    <div id="parallax">
+         <img class="image1" src="Background_DonePng.png">
+        <img class="thumbnail" src="LofiBoyHeadphones_Backround_Removed.png" alt="image">
+       
+    </div>
+
+    <div id="wrapper">
+        <div id="similar">
+            <p style="color:rgb(25, 78, 194); font-size: 100px;">Hi my name is Noordeen Abunamous</p>
+            <p>Im a senior studying computer science at CSUS</p>
+            <p>I really want to learn more about automation and learn about combining code and hardware. Maybe ill
+                play with microcontrollers over the summer.</p>
+            <p>My goals include building an app and a website before I graduate.
+                Hopefully ill be able to use react native for that, because right now
+                im taking a javascript course in preperation.</p>
+            <p>Email:noordeen408@gmail.com</p>
+
+            <br>
+            <p style="font-size: 40;"> PL Assignment 1: <br><br>
+                Definitions</p>
+            <p><strong>Syntax</strong><br>
+            <ul>
+                <li style="color: rgb(54, 112, 236); font-size: 25px;">Refers to the ways symbols may be combined to
+                    create
+                    well-formed
+                    sentences (or programs) in the
+                    language. Syntax deals solely with the form and structure of symbols in a langauge without any
+                    consideration given to their meaning. <a
+                        href="https://www.computerhope.com/jargon/s/syntax.htm">ref</a></li>
+            </ul>
+            </p>
+
+            <p><strong>Semantics</strong><br>
+            <ul>
+                <li style="color: rgb(54, 112, 236); font-size: 25px;">Semantic reveals
+                    the meaning of syntactically valid strings in a language.<a
+                        href="https://cs.stackexchange.com/questions/6517/what-is-semantics">ref</a></li>
+                </li>
+            </ul>
+            </p>
+
+            <p><strong>Parsing</strong><br>
+            <ul>
+                <li style="color: rgb(54, 112, 236); font-size: 25px;">A parser turns linear text into a tree. Based on
+                    a ruleset, called grammar.<a
+                        href="https://stackoverflow.com/questions/2933192/what-is-parsing-in-terms-that-a-new-programmer-would-understand">ref</a>
+                </li>
+
+                </li>
+            </ul>
+            </p>
+
+            <p><strong>Lexical Scanning</strong><br>
+            <ul>
+                <li style="color: rgb(54, 112, 236); font-size: 25px;">breaks streams down
+                    into “lexemes” where a token represents the basic unit of meaning. Tokens are strung together in
+                    such a way that the
+                    language compiler must go back and isolate them to implement the right computing instructions. .
+                    <a href="https://www.techopedia.com/definition/8051/lexical-analysis">ref</a>
+                </li>
+                </li>
+            </ul>
+            </p>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+
+        var image = document.getElementsByClassName('image1'); //used to be thumbnail
+        new simpleParallax(image, {
+            scale: 0.5,
+            orientation: 'up',
+            overflow: true,
+            delay: 4,
+
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
